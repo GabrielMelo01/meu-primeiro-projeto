@@ -1,20 +1,19 @@
-import { Component, Input } from '@angular/core';
+import { Component, OnDestroy } from '@angular/core';
 
 @Component({
   selector: 'app-title',
   templateUrl: './title.component.html',
   styleUrls: ['./title.component.scss']
 })
-export class TitleComponent {
-
-  @Input() public title:string = 'Hello World!'
+export class TitleComponent implements OnDestroy{
 
   constructor() {}
 
   ngOnInit(): void {
   }
 
-  ngOnChanges(): void {
-    console.log("FOI ALTERADO COM SUCESSO!")
+  ngOnDestroy(): void {
+    console.log('Destruyendo componente');
   }
+
 }
