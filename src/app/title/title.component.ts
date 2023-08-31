@@ -15,6 +15,6 @@ export class TitleComponent {
   }
 
   ngOnChanges(): void {
-    alert("FOI ALTERADO COM SUCESSO!")
+    console.log("FOI ALTERADO COM SUCESSO!")
   }
 }
