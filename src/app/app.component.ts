@@ -5,4 +5,11 @@ import { Component } from '@angular/core';
   template: '<router-outlet></router-outlet>'
 })
 export class AppComponent {
+  constructor(){}
+
+  ngOnInit(): void {
+    setTimeout( () => {
+      console.log(1);
+    },5000)
+  }
 }
